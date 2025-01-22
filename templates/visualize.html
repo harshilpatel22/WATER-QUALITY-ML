@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization</title>
+</head>
+<body>
+    <h1>Water Quality Analysis</h1>
+    <p><strong>Best State:</strong> {{ best_state }}</p>
+    <p><strong>Percentage of Good Water Quality:</strong> {{ best_state_percentage }}%</p>
+
+    <img src="{{ image_path }}" alt="Water Quality Distribution" style="width:100%; max-width:800px;">
+
+    <a href="{{ url_for('index') }}">
+        <button>Upload Another File</button>
+    </a>
+</body>
+</html>
